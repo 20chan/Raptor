@@ -1,0 +1,20 @@
+﻿<s> ::= <sentence>*<eof>
+
+<sentence> ::= <if>
+	| <repeat>
+	| <for>
+	| <while>
+	| <return>
+	| <yield>
+	| <continue>
+	| <break>
+	| <decl_var_semi>
+	| <decl_func>
+	| <simple_sentence>
+
+<simple_sentence> ::= <call> | <assign>
+
+<call> ::= <expr> ";"
+<assign> ::= <lexpr> "=" <expr> ";"
+
+<lexpr> ::= <

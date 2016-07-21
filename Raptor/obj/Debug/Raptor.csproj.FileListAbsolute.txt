@@ -1,0 +1,10 @@
+D:\C#\Raptor\Raptor\bin\Debug\Raptor.exe.config
+D:\C#\Raptor\Raptor\bin\Debug\Raptor.exe
+D:\C#\Raptor\Raptor\bin\Debug\Raptor.pdb
+D:\C#\Raptor\Raptor\obj\Debug\Raptor.csprojResolveAssemblyReference.cache
+D:\C#\Raptor\Raptor\obj\Debug\Raptor.Properties.Resources.resources
+D:\C#\Raptor\Raptor\obj\Debug\Raptor.csproj.GenerateResource.Cache
+D:\C#\Raptor\Raptor\obj\Debug\Raptor.exe
+D:\C#\Raptor\Raptor\obj\Debug\Raptor.pdb
+D:\C#\Raptor\Raptor\bin\Debug\Raptor.exe.CodeAnalysisLog.xml
+D:\C#\Raptor\Raptor\bin\Debug\Raptor.exe.lastcodeanalysissucceeded

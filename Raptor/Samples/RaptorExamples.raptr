@@ -1,0 +1,61 @@
+﻿//변수선언, 자료형은 생략 가능.
+thisisvar:int = 0;
+name:string = "래애앱터";
+
+//헬로월드
+helloworld() = { print("hello, world!"); }
+
+//전역 변수 사용
+result:int = 0;
+add(val:int) = { result += val; }
+add(val:float) = { result += val:int; } //메서드 오버로드, 형변환
+
+//람다
+plus1(val:int) = val + 1;
+
+//튜플
+swap(a, b) = (b, a);
+do(a, b) = a;
+ifIwanttoPutTuple() = {
+	a, b = 1, 3;
+	res = swap(a, b); //여기서 res의 타입은 (int, int) 로 선언을 res:(int, int) = ~~ 로 해도 됨
+	do(res.lvalue, res.rvalue); //1
+
+	(c, d) = swap(c, d);
+	do(c, d) //이게 아마 권장하는 방식
+
+	res = (d, c); //swap
+	a = (c, d).lvalue //res.lvalue 와 동일, a = c 와 동일
+
+	(a, b) = (1, 2) //당연하지만, 존재하던 변수를 넣을 수도 있음
+	(a, b) = (b, a) //간단한 Swap
+}
+
+//튜플로 짜본 피보나치 수열
+fibonacci(n) = {
+	a, b = 0, 1
+	repeat(n) { (a, b) = (b, a + b) }
+	return a
+}
+
+//리스트
+enumto(n) = [1..n] //enumto(n:int) : int[]  = { return [1..n]; }
+listtest() = {
+	list = [];
+	print(list !! 0) //에러
+	
+}
+
+//리스트를 이용한 퀵소트
+quicksort(ns) = [quicksort(from n in ns, where n >= ns[0], select n)]
+			++ ns[0]
+			++ [from n in ns, where n < ns[0], select n]
+
+//LINQ
+linq(val:int[]) = from v in val, where v > 0, select -v;
+
+taller(people:person[]) : int[] = {
+	return (from p in people,
+			where p.tall >= 150,
+			select p.tall);
+}

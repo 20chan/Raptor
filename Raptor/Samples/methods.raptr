@@ -1,0 +1,9 @@
+﻿fibonacci(n) = {
+	a, b = 0, 1
+	repeat(n) { (a, b) = (b, a + b) }
+	return a
+}
+
+quicksort(ns) = [quicksort(from n in ns, where n >= ns[0], select n)]
+			++ ns[0]
+			++ [from n in ns, where n < ns[0], select n]
